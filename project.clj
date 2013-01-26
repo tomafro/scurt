@@ -1,7 +1,7 @@
 (defproject scurt "1.0.0-SNAPSHOT"
   :description "FIXME: write description"
   :main scurt.main
-  :dependencies [[clojure "1.4.0"]
+  :dependencies [[org.clojure/clojure "1.4.0"]
                  [org.clojure/data.json "0.2.0"]
                  [ring/ring-jetty-adapter "0.3.9"]
                  [postgresql/postgresql "9.1-901.jdbc4"]
