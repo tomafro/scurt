@@ -6,8 +6,8 @@
         [korma.core]))
 
 (defn link-hash [link-from-db]
-  {:uri (str "http://tomaf.ro/" (:key link-from-db))
-   :location (:url link-from-db)})
+  (if link-from-db
+    {:uri (str "http://tomaf.ro/" (:key link-from-db)) :location (:url link-from-db)}))
 
 (defentity links)
 
